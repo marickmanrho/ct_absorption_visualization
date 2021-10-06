@@ -1,0 +1,8 @@
+name: isw_vis
+channels:
+  - conda-forge
+dependencies:
+  - python = 3.8
+  - numpy
+  - dash
+  - dash-bootstrap-components
