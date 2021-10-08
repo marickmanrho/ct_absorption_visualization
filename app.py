@@ -26,6 +26,7 @@ app = Dash(
     title="CT absorption",
 )
 
+
 # Input parameters - See also input parameters for update_visualization()
 parameters = {
     "E": {"min": -10.0, "max": 10.0, "default": 0.0, "step": 0.1, "alias": "Energy"},
@@ -208,6 +209,8 @@ page_container = html.Div(
 ### Set app layout to page container ###
 app.layout = page_container  ### Assemble all layouts ###
 app.validation_layout = html.Div(children=[page_container])
+
+server = app.server
 
 # Run server
 if __name__ == "__main__":
